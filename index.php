@@ -1,9 +1,4 @@
-# Ini File Manager
-PHP Ini File Manager
-
-Example:
-
-```php
+<?php
 
 // require library
 require "src/IniFileManager.php";
@@ -23,9 +18,6 @@ echo $ini->getItem('database', 'port') . PHP_EOL;
 $ini->addItem('categoria', 'item', 'value');
 
 // save changes into a new file
-$ini->save(__DIR__ . '/configuration2.ini');
-
+//$ini->save(__DIR__ . '/configuration2.ini');
 // save changes into the same file
 $ini->save();
-
-```
